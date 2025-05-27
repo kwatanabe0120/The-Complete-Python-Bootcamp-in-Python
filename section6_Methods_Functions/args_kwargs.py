@@ -10,3 +10,7 @@ def my_func2(**kwargs):
 
 # my_func(10,20,30,490)
 my_func2(fruit = 'Apple', test = 'test', hello = 23749823)
+
+
+s = ' hello'
+print(s.upper())
