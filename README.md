@@ -12,12 +12,15 @@ This repository documents my progress in mastering Python through the Udemy cour
 
 ## 📅 Progress
 
-| Date       | Section | Topic                   | Status       |
-|------------|---------|--------------------------|--------------|
-| 2025-06-30 | 3       | Object & Data Structure  | ✅ Completed |
-| 2025-07-01 | 4       | Comparison Operators     | ✅ Completed |
-| 2025-07-02 | 5       | Statements               | ✅ Completed |
-| 2025-07-03 | 6       | Methods & Functions      | 🔄 In progress |
+| Date       | Section | Topic                            | Status       |
+|------------|---------|-----------------------------------|--------------|
+| 2025-05-31 | 1       | Course Introduction               | ✅ Completed |
+| 2025-05-31 | 2       | Setting up Python Environment     | ✅ Completed |
+| 2025-05-31 | 3       | Object & Data Structure           | ✅ Completed |
+| 2025-05-31 | 4       | Comparison Operators              | ✅ Completed |
+| 2025-05-31 | 5       | Statements                        | ✅ Completed |
+| 2025-05-31 | 6       | Methods & Functions               | ✅ Completed |
+| 2025-05-31 | 7       | Milestone Project - 1             | In progress |
 
 ## 🛠 Environment
 
