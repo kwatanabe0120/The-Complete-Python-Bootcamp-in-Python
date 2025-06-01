@@ -32,21 +32,21 @@ def write_data(board,index):
 def check_winner(board):
     # Check rows
     for i in range(0, 9, 3):
-        if board[i] == board[i+1] == board[i+2] and board[i] != '':
+        if board[i] == board[i+1] == board[i+2] and board[i] != ' ':
             print('You Win!!')
             return True
 
     # Check columns
     for i in range(3):
-        if board[i] == board[i+3] == board[i+6] and board[i] != '':
+        if board[i] == board[i+3] == board[i+6] and board[i] != ' ':
             print('You Win!!')
             return True
 
     # Check diagonals
-    if board[0] == board[4] == board[8] and board[0] != '':
+    if board[0] == board[4] == board[8] and board[0] != ' ':
         print('You Win!!')
         return True
-    if board[2] == board[4] == board[6] and board[2] != '':
+    if board[2] == board[4] == board[6] and board[2] != ' ':
         print('You Win!!')
         return True
 

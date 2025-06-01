@@ -1,25 +1,25 @@
 # while loop to validate user input
 
-def user_choise():
-    choise = 'Wrong'
+def user_choice():
+    choice = 'Wrong'
     accepted_values = range(0,11)
     within_range = False
 
-    while choise.isdigit() == False or within_range == False:
-        choise = input("Enter a positive number: ")
+    while choice.isdigit() == False or within_range == False:
+        choice = input("Enter a positive number: ")
         
         # Check if input is a digit
-        if choise.isdigit() == False:
+        if choice.isdigit() == False:
             print("Invalid input. Please enter a positive number.") 
         
         # Check if input is within the accepted range
-        if choise.isdigit() == True:
-            if int(choise) in accepted_values:
+        if choice.isdigit() == True:
+            if int(choice) in accepted_values:
                 within_range = True
             else: 
                 print("Number out of range. Please enter a number between 0 and 10.")
                 within_range = False
-    return int(choise)
+    return int(choice)
 
-result = user_choise()
+result = user_choice()
 print("You entered:", result)

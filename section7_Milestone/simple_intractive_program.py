@@ -4,27 +4,27 @@ def display_game_list(game_list):
     print(game_list)
     print('\n')
 
-def position_choise():
-    choise = 'Wrong'
+def position_choice():
+    choice = 'Wrong'
     while True:
-        choise = input("Please enter a position (0, 1, or 2): ")
-        if choise not in ['0', '1', '2']:
+        choice = input("Please enter a position (0, 1, or 2): ")
+        if choice not in ['0', '1', '2']:
             print("Invalid input. Please enter 0, 1, or 2.")
             continue
-        return int(choise)
+        return int(choice)
     
-def replacement_choise(game_list, position):
+def replacement_choice(game_list, position):
     user_placement = input("Type a string to place at position: ")
     game_list[position] = user_placement
     return game_list
 
 def game_choice():
-    choise = 'Wrong'
-    while choise not in ['Y','N']:
-        choise = input("Do you want to continue? (Y/N): ").upper()
-        if choise not in ['Y', 'N']:
+    choice = 'Wrong'
+    while choice not in ['Y','N']:
+        choice = input("Do you want to continue? (Y/N): ").upper()
+        if choice not in ['Y', 'N']:
             print("Invalid input. Please enter Y or N.")
-    if choise == 'Y':
+    if choice == 'Y':
         return True
     else:
         print("Thank you for playing!")

@@ -80,7 +80,7 @@ def check_condition(board):
     
     # Tie check
     if ' ' not in board:
-        print('This game is drow!\n')
+        print('This game is a draw!\n')
         winner_decided = True
      
 # Ask if players want to play again.
@@ -99,7 +99,7 @@ def reset_game():
             print('Please enter Yes or No')
 
 # Introduction of Game
-print('\nWelocme to Tic Toe game\nHere is the number for each space of the board\n')
+print('\nWelcome to Tic Toe game\nHere is the number for each space of the board\n')
 display_board(test_board)
 player1_marker, player2_marker = player_input()
 
