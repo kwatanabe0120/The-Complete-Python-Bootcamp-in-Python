@@ -33,7 +33,6 @@ class Animal1:
 class Dog1(Animal1):
     def speak(self):
         print("Woof!")
-    pass
 
 my_dog = Dog1()
 my_dog.speak()

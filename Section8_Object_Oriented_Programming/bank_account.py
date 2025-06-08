@@ -4,14 +4,14 @@ class Account:
         self.balance = balance
 
     def deposit(self,value):
-        print('Deposite is accepted')
+        print('Deposit is accepted')
         self.balance += value
 
     def withdraw(self,value):
         if self.balance < value:
-            print("You don't have enoght money!")
+            print("You don't have enough money!")
         else:
-            print('Withdrow is accepted')
+            print('Withdraw is accepted')
             self.balance -= value
 
     def __str__(self):
