@@ -21,7 +21,8 @@ This repository documents my progress in mastering Python through the Udemy cour
 | 2025-05-31 | 5       | Statements                        | ✅ Completed |
 | 2025-05-31 | 6       | Methods & Functions               | ✅ Completed |
 | 2025-06-01 | 7       | Milestone Project - 1             | ✅ Completed |
-| 2025-06-01 | 8       | Object Oriented Programming       | In progress |
+| 2025-06-01 | 8       | Object Oriented Programming       | ✅ Completed |
+| 2025-06-08 | 9       | Modules and Packages              | In progress  |
 
 ## 🛠 Environment
 
