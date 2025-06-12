@@ -1,7 +1,7 @@
 while True:
     try:
         result = int(input('Please enter number: '))
-    except:
+    except ValueError:
         print('Error happens, try again')
     else:
         print('Thank you!')
