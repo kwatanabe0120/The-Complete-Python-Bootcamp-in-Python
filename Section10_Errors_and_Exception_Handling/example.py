@@ -9,5 +9,5 @@ try:
 except:
     print('The add function did not work correctly.')
 else:
-    # Since input retures str, this never happens
+    # Since input returns str, this never happens
     print('You successfully used the add function.')
