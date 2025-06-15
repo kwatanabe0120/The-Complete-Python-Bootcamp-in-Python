@@ -17,3 +17,23 @@ class Hand:
         while self.value > 21 and self.aces:
             self.value -= 10
             self.aces -= 1 
+
+# for test
+    def __str__(self):
+        result = ''
+        for card in self.cards:
+            result += f'{card.rank} of {card.suit}\n'
+        return result
+
+import card
+
+if __name__ == '__main__':
+    test_hand = Hand()
+    c1 = card.Card('Diamonds', 'Ace')
+    c2 = card.Card('Diamonds', 'Three')
+    c3 = card.Card('Diamonds', 'Queen')
+    test_hand.add_card(c1)
+    test_hand.add_card(c2)
+    test_hand.add_card(c3)
+    test_hand.adjust_for_ace()
+    print(test_hand.value)

@@ -23,8 +23,9 @@ This repository documents my progress in mastering Python through the Udemy cour
 | 2025-06-01 | 7       | Milestone Project - 1             | ✅ Completed |
 | 2025-06-01 | 8       | Object Oriented Programming       | ✅ Completed |
 | 2025-06-08 | 9       | Modules and Packages              | ✅ Completed |
-| 2025-06-12 | 10      | Errors and Exceptions Handling    | ✅ Completed  |
-| 2025-06-13 | 11      | Milestone Project - 2             | In progress  |
+| 2025-06-12 | 10      | Errors and Exceptions Handling    | ✅ Completed |
+| 2025-06-13 | 11      | Milestone Project - 2             | ✅ Completed |
+| 2025-06-15 | 12      | Python Decorator                  | In progress  |
 
 ## 🛠 Environment
 

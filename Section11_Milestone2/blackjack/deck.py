@@ -23,3 +23,16 @@ class Deck:
     def deal(self):
         single_card = self.deck.pop()
         return single_card
+    
+
+if __name__ == '__main__':
+    test_deck = Deck()
+    # show all 52 cards
+    print(test_deck)
+
+    # Delete 51 cards
+    for _ in range(51):
+        test_deck.deal()
+    
+    # since pop method take away the last card so only one card at the top of deck will show
+    print(test_deck)

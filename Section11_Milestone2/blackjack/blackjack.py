@@ -1,34 +1,35 @@
-import hand
+import hand as hand_module
 import deck as deck_module  # Use an alias to avoid naming conflict
-import chips
+import chips as chips_module
 
 
-def take_bet(chips):
+def take_bet(chips: chips_module.Chips):
     
     while True:
         try:
             chips.bet = int(input('\nHow many chips would you like to bet? '))
         except ValueError:
             print('Sorry, a bet must be an integer!')
+        # for when user enter int
         else:
             if chips.bet > chips.total:
                 print("Sorry, your bet can't exceed",chips.total)
             else:
                 break
         
-def hit(deck,hand):
+def hit(deck: deck_module.Deck, hand: hand_module.Hand):
     
     hand.add_card(deck.deal())
     hand.adjust_for_ace()
 
-def hit_or_stand(deck,hand):
+def hit_or_stand(deck: deck_module.Deck, hand: hand_module.Hand):
     global playing  # to control an upcoming while loop
     
     while True:
         x = input("\nWould you like to Hit or Stand? Enter 'h' or 's' ")
         
         if x[0].lower() == 'h':
-            hit(deck,hand)  # hit() function defined above
+            hit(deck,hand)  
 
         elif x[0].lower() == 's':
             print("Player stands. Dealer is playing.")
@@ -39,7 +40,7 @@ def hit_or_stand(deck,hand):
             continue
         break
 
-def show_some(player,dealer):
+def show_some(player: hand_module.Hand,dealer: hand_module.Hand):
     print("\nDealer's Hand:")
     print(" <card hidden>")
     print('',dealer.cards[1])  
@@ -72,26 +73,27 @@ def push(player,dealer):
 
 playing = True
 
+# from here main function
 
 while True:
     # Print an opening statement
     print('\nWelcome to BlackJack!\nGet as close to 21 as you can without going over!\n\
-    Dealer hits until she reaches 17. Aces count as 1 or 11.\n')
+    Dealer hits until he reaches 17. Aces count as 1 or 11.\n')
     
     # Create & shuffle the deck, deal two cards to each player
     deck = deck_module.Deck()  # Use the alias to access the Deck class
     deck.shuffle()
     
-    player_hand = hand.Hand()
+    player_hand = hand_module.Hand()
     player_hand.add_card(deck.deal())
     player_hand.add_card(deck.deal())
     
-    dealer_hand = hand.Hand()
+    dealer_hand = hand_module.Hand()
     dealer_hand.add_card(deck.deal())
     dealer_hand.add_card(deck.deal())
             
     # Set up the Player's chips
-    player_chips = chips.Chips()  # remember the default value is 100    
+    player_chips = chips_module.Chips()  # remember the default value is 100    
     
     # Prompt the Player for their bet
     take_bet(player_chips)
