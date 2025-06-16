@@ -58,13 +58,13 @@ while game_on:
             print('War!')
 
             if len(player1.all_cards) < 5:
-                print('Player one unable to declear war')
+                print('Player one unable to declare war')
                 print('Player Two wins!')
                 game_on = False
                 break
 
             elif len(player2.all_cards) < 5:
-                print('Player two unable to declear war')
+                print('Player two unable to declare war')
                 print('Player One wins!')
                 game_on = False
                 break
