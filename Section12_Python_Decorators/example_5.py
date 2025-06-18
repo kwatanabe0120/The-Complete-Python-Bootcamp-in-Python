@@ -1,7 +1,7 @@
-def new_decorator(originak_func):
+def new_decorator(original_func):
     def wrap_func():
         print('\nCode here before the original function!\n')
-        originak_func()
+        original_func()
         print('\nCode here after the original function!\n')
     return wrap_func
 
