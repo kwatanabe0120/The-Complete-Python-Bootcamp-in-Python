@@ -5,10 +5,10 @@ def create_cubes(n):
         result.append(i ** 3)
     return result
 
-# doesn't need to have whole list in memory
 for i in create_cubes(10):
     print(i)
 
+# doesn't need to have whole list in memory
 def generate_cubes(n):
     for i in range(n):
         yield i ** 3
