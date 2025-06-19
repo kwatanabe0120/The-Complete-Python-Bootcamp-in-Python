@@ -26,7 +26,8 @@ This repository documents my progress in mastering Python through the Udemy cour
 | 2025-06-12 | 10      | Errors and Exceptions Handling    | ✅ Completed |
 | 2025-06-13 | 11      | Milestone Project - 2             | ✅ Completed |
 | 2025-06-15 | 12      | Python Decorator                  | ✅ Completed |
-| 2025-06-18 | 13      | Python Generators                 | In progress  |
+| 2025-06-18 | 13      | Python Generators                 | ✅ Completed |
+| 2025-06-20 | 14      | Advanced Python Modules           | In progress  |
 
 ## 🛠 Environment
 
