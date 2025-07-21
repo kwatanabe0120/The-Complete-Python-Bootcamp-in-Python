@@ -18,7 +18,7 @@ pattern = r'\d{3}-\d{3}-\d{4}'
 # print(re.findall(pattern, test))
 
 # func for search patter in a file
-def search(file,pattern= r'\d{3}-\d{3}-\d{4}'):
+def search(file, pattern= r'\d{3}-\d{3}-\d{4}'):
 	f = open(file,'r')
 	text = f.read()
 	
