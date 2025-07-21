@@ -13,13 +13,16 @@ print("\nFiles and directories in current directory:")
 print(os.listdir())
 
 print("\nFiles and directories in the parent Python Bootcamp directory:")
-print(os.listdir('/Users/kodai_watanabe/development/Udemy/Python/The_Complete_Python_Bootcamp_in_Python'))
+base_dir = os.getenv('BASE_DIR', '/default/path/to/Python_Bootcamp')
+print(os.listdir(os.path.join(base_dir)))
 
 print("\nMoving 'practice.txt' to 'move_test' directory:")
-print(shutil.move('practice.txt', '/Users/kodai_watanabe/development/Udemy/Python/The_Complete_Python_Bootcamp_in_Python/Section14_Advanced_Python_Modules/os/move_test'))
+move_test_dir = os.path.join(base_dir, 'Section14_Advanced_Python_Modules/os/move_test')
+print(shutil.move('practice.txt', move_test_dir))
 
 print("\nMoving 'practice.txt' back from 'move_test' directory to current directory:")
-print(shutil.move('/Users/kodai_watanabe/development/Udemy/Python/The_Complete_Python_Bootcamp_in_Python/Section14_Advanced_Python_Modules/os/move_test/practice.txt', os.getcwd()))
+practice_file_path = os.path.join(move_test_dir, 'practice.txt')
+print(shutil.move(practice_file_path, os.getcwd()))
 
 send2trash.send2trash('practice.txt')
 
